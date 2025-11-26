@@ -1,3 +1,20 @@
+# Workspace: ai_dev_tools_zcamp
+
+This repository contains the exercises and supporting code for the AI Dev Tools / Zoomcamp-style workshop.
+
+Repository layout
+- `01-todo/` — The first exercise: a small Django ToDo project (project lives under `01-todo/zcamp`).
+
+Quick notes
+- To work with the Django project directly:
+  - cd into the project: `cd 01-todo/zcamp`
+  - Use `python manage.py` for Django commands (migrate, runserver, test).
+
+- Docker / docker-compose in the repo have been updated to run the app from `01-todo/zcamp` when using the sample `docker-compose.yml`.
+
+If you add additional exercises, place them at the repository root as `02-.../`, `03-.../`, etc., so each exercise is isolated under a top-level folder.
+
+For details about the ToDo app itself, see `01-todo/README.md`.
 # ai_dev_tools_zcamp
 Following Module 1 of DataTalksClub course - https://datatalks.club/courses/ai-dev-tools-zoomcamp/
 
