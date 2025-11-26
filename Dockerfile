@@ -26,4 +26,4 @@ ENV DJANGO_SETTINGS_MODULE=zcamp.settings
 
 EXPOSE 8000
 
-ENTRYPOINT ["/app/01-todo/entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]
