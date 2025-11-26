@@ -7,9 +7,9 @@ if [ -f "/app/.venv/bin/activate" ]; then
 fi
 
 echo "Changing directory to project root if present..."
-if [ -d "/app/01-todo/zcamp" ]; then
+if [ -f "/app/01-todo/zcamp/manage.py" ]; then
   cd /app/01-todo/zcamp
-elif [ -d "/app/zcamp" ]; then
+elif [ -f "/app/zcamp/manage.py" ]; then
   cd /app/zcamp
 fi
 
