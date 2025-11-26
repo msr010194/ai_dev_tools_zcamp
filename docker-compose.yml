@@ -2,7 +2,7 @@ version: '3.8'
 services:
   web:
     build: .
-    working_dir: /app
+    working_dir: /app/01-todo/zcamp
     command: gunicorn zcamp.wsgi:application --bind 0.0.0.0:8000 --workers 3
     env_file: .env
     ports:
@@ -24,11 +24,11 @@ services:
 
   static:
     build: .
-    working_dir: /app
+    working_dir: /app/01-todo/zcamp
     command: python manage.py collectstatic --noinput
     env_file: .env
     volumes:
-      - static_volume:/usr/share/nginx/html
+      - static_volume:/app/01-todo/zcamp/staticfiles
 
 volumes:
   static_volume:

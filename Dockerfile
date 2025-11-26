@@ -7,7 +7,7 @@ RUN apt-get update \
 
 # Create app user
 RUN useradd --create-home appuser
-WORKDIR /app
+WORKDIR /app/01-todo/zcamp
 
 # Copy only requirements first to leverage docker cache
 COPY requirements.txt /app/requirements.txt
@@ -26,4 +26,4 @@ ENV DJANGO_SETTINGS_MODULE=zcamp.settings
 
 EXPOSE 8000
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["/app/01-todo/entrypoint.sh"]
